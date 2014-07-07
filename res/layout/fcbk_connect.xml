@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+<TextView
+    android:id="@+id/home_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:layout_below="@id/home_text"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="false"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="350dp"
+    android:text="Pour commencer, connectez-vous à votre profil facebook :"
+    android:textColor="#000"
+    android:textSize="22sp" />
+	 
+	  <ImageView
+	      android:id="@+id/participer"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignParentBottom="false"
+	      android:layout_below="@id/home_text"
+	      android:layout_centerHorizontal="true"
+	      android:layout_marginTop="100dp"
+	      android:src="@drawable/facebook_connect" />
+	  
+	  <ImageView
+	      android:id="@+id/secure"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignParentBottom="false"
+	      android:layout_below="@id/participer"
+	      android:layout_centerHorizontal="true"
+	      android:layout_marginBottom="10dp"
+	      android:layout_marginTop="10dp"
+	      android:src="@drawable/secure" />
+	  
+	  	  <ImageView
+	  	      android:id="@+id/footer"
+	  	      android:layout_width="fill_parent"
+	  	      android:layout_height="500dp"
+	  	      android:layout_below="@id/secure"
+	  	      android:layout_centerHorizontal="false"
+	  	      android:layout_marginTop="425dp"
+	  	      android:src="@drawable/home_footer" />
+
+</RelativeLayout>

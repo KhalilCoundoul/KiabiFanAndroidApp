@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+<!-- TextView
+    android:id="@+id/home_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:layout_below="@id/home_text"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="false"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="260dp"
+    android:text="Mr X , votez pour vos articles préférés en cliquant sur “j’aime”!"
+    android:textSize="20sp" /-->
+
+<TableRow
+    android:id="@+id/home_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:layout_below="@id/home_text"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="false"
+    android:layout_marginTop="228dp"
+    android:orientation="vertical" >
+
+	 <TextView
+	     android:id="@+id/user_name_2"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginRight="10dp"
+	     android:text="Mr X"
+	     android:textColor="#00ade8"
+	     android:textSize="22sp"
+	     android:textStyle="bold" />
+
+	    	  <TextView
+	    	      android:id="@+id/txt_conteur_2"
+	    	      android:layout_width="wrap_content"
+	    	      android:layout_height="wrap_content"
+	    	      android:layout_below="@id/share"
+	    	      android:layout_marginLeft="10dp"
+	    	      android:text=", votez pour vos articles préférés en cliquant sur “j’aime”!"
+	    	      android:textColor="#000"
+	    	      android:textSize="22sp"
+	    	      android:textStyle="bold" />
+	  	      	      
+</TableRow>
+    
+	  	 <TableRow
+	  	     android:id="@+id/conteur"
+	  	     android:layout_width="wrap_content"
+	  	     android:layout_height="wrap_content"
+	  	     android:layout_below="@id/home_text"
+	  	     android:layout_centerHorizontal="true"
+	  	     android:layout_marginTop="60dp"
+	  	     android:orientation="vertical" >
+	  	      
+	  	      <TextView
+	  	          android:id="@+id/conteur_6"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:layout_gravity="center"
+	  	          android:layout_marginRight="50dp"
+	  	          android:background="@drawable/product_likes_bg"
+	  	          android:padding="30dp"
+	  	          android:text="15212"
+	  	          android:textColor="#FFF" />
+
+	  	      <TextView
+	  	          android:id="@+id/conteur_7"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:layout_gravity="center"
+	  	          android:layout_marginLeft="80dp"
+	  	          android:background="@drawable/product_likes_bg"
+	  	          android:padding="30dp"
+	  	          android:text="15212"
+	  	          android:textColor="#FFF" />
+
+	  	      <TextView
+	  	          android:id="@+id/conteur_8"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:padding="30dp"
+	  	          android:layout_gravity="center"
+	  	          android:text="15212"
+	  	          android:textColor="#FFF"
+	  	          android:layout_marginLeft="120dp"
+	  	          android:background="@drawable/product_likes_bg" />
+	  	      
+	  	   </TableRow>
+	  	   
+	  	  <TableRow
+	  	      android:id="@+id/contenu"
+	  	      android:layout_width="wrap_content"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/conteur"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:layout_marginBottom="10dp"
+	  	      android:gravity="center"
+	  	      android:orientation="vertical" >
+
+	  	      <ImageView
+	  	          android:id="@+id/product_6"
+	  	          android:layout_width="200dp"
+	  	          android:layout_height="300dp"
+	  	          android:background="@drawable/product_border"
+	  	          android:paddingBottom="15dp"
+	  	          android:paddingLeft="10dp"
+	  	          android:paddingRight="10dp"
+	  	          android:src="@drawable/article" />
+
+	  	      <ImageView
+	  	          android:id="@+id/product_7"
+	  	          android:layout_width="200dp"
+	  	          android:layout_height="300dp"
+	  	          android:layout_marginLeft="30dp"
+	  	          android:background="@drawable/product_border"
+	  	          android:paddingBottom="15dp"
+	  	          android:paddingLeft="10dp"
+	  	          android:paddingRight="10dp"
+	  	          android:src="@drawable/article" />
+
+	  	      <ImageView
+	  	          android:id="@+id/product_8"
+	  	          android:layout_width="200dp"
+	  	          android:layout_height="300dp"
+	  	          android:layout_marginLeft="30dp"
+	  	          android:background="@drawable/product_border"
+	  	          android:paddingBottom="15dp"
+	  	          android:paddingLeft="10dp"
+	  	          android:paddingRight="10dp"
+	  	          android:src="@drawable/article" />
+	  	      
+	  	   </TableRow>
+	  	   
+	  	  <TableRow
+	  	      android:id="@+id/description"
+	  	      android:layout_width="wrap_content"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/conteur"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:layout_marginTop="210dp"
+	  	      android:orientation="vertical" >
+	  	      
+	  	      <TextView
+	  	          android:id="@+id/nom_6"
+	  	          android:layout_width="150dp"
+	  	          android:layout_height="80dp"
+	  	          android:layout_gravity="center"
+	  	          android:layout_marginRight="80dp"
+	  	          android:background="@drawable/product_name_bg"
+	  	          android:paddingLeft="15dp"
+	  	          android:paddingTop="15dp"
+	  	          android:text="PRODUCT 1 NAME"
+	  	          android:textColor="#FFF"
+	  	          android:textStyle="bold" />
+
+	  	      <TextView
+	  	          android:id="@+id/nom_7"
+	  	          android:layout_width="150dp"
+	  	          android:layout_height="80dp"
+	  	          android:layout_gravity="center"
+	  	          android:layout_marginRight="80dp"
+	  	          android:background="@drawable/product_name_bg"
+	  	          android:paddingLeft="15dp"
+	  	          android:paddingTop="15dp"
+	  	          android:text="PRODUCT 2 NAME"
+	  	          android:textColor="#FFF"
+	  	          android:textStyle="bold" />
+
+	  	      <TextView
+	  	          android:id="@+id/nom_8"
+	  	          android:layout_width="150dp"
+	  	          android:layout_height="80dp"
+	  	          android:layout_gravity="center"
+	  	          android:background="@drawable/product_name_bg"
+	  	          android:paddingLeft="15dp"
+	  	          android:paddingTop="15dp"
+	  	          android:text="PRODUCT 3 NAME"
+	  	          android:textColor="#FFF"
+	  	          android:textStyle="bold" />
+	  	      
+	  	   </TableRow>
+	  	   
+	  	  <TableRow
+	  	      android:id="@+id/like_group_1"
+	  	      android:layout_width="fill_parent"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/conteur"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:layout_marginTop="290dp"
+	  	      android:orientation="vertical" >
+	  	      
+	  	      <ImageView
+	  	          android:id="@+id/like_6"
+	  	          android:layout_width="40dp"
+	  	          android:layout_height="15dp"
+	  	          android:layout_marginLeft="150dp"
+	  	          android:background="@drawable/like_it" />
+
+	  	      <ImageView
+	  	          android:id="@+id/like_7"
+	  	          android:layout_width="40dp"
+	  	          android:layout_height="15dp"
+	  	          android:layout_marginLeft="200dp"
+	  	          android:background="@drawable/like_it" />
+
+	  	      <ImageView
+	  	          android:id="@+id/like_8"
+	  	          android:layout_width="40dp"
+	  	          android:layout_height="15dp"
+	  	          android:layout_marginLeft="190dp"
+	  	          android:background="@drawable/like_it" />
+	  	      
+	  	   </TableRow>
+	  	  
+	  	  <TableRow
+	  	      android:id="@+id/liked_group_1"
+	  	      android:layout_width="fill_parent"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/home_text"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:layout_marginTop="100dp"
+	  	      android:orientation="vertical" >
+	  	      
+	  	      <ImageView
+	  	          android:id="@+id/liked_6"
+	  	          android:layout_width="45dp"
+	  	          android:layout_height="45dp"
+	  	          android:layout_marginLeft="135dp"
+	  	          android:background="@drawable/picto_like" />
+
+	  	      <ImageView
+	  	          android:id="@+id/liked_7"
+	  	          android:layout_width="45dp"
+	  	          android:layout_height="45dp"
+	  	          android:layout_marginLeft="185dp"
+	  	          android:background="@drawable/picto_like" />
+
+	  	      <ImageView
+	  	          android:id="@+id/liked_8"
+	  	          android:layout_width="45dp"
+	  	          android:layout_height="45dp"
+	  	          android:layout_marginLeft="175dp"
+	  	          android:background="@drawable/picto_like" />
+	  	      
+	  	   </TableRow>
+   
+	  	  <TableRow
+	  	      android:id="@+id/conteur_2"
+	  	      android:layout_width="wrap_content"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/contenu"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:orientation="vertical" >
+	  	      
+	  	      <TextView
+	  	          android:id="@+id/conteur_9"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:layout_gravity="center"
+	  	          android:layout_marginLeft="20dp"
+	  	          android:background="@drawable/product_likes_bg"
+	  	          android:padding="30dp"
+	  	          android:text="15212"
+	  	          android:textColor="#FFF" />
+
+	  	      <TextView
+	  	          android:id="@+id/conteur_10"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:layout_marginLeft="120dp"
+	  	          android:padding="30dp"
+	  	          android:text="15212"
+	  	          android:layout_gravity="center"
+	  	          android:textColor="#FFF"
+	  	          android:background="@drawable/product_likes_bg" />
+	  	      
+	  	   </TableRow>
+	  	   
+	  	  <TableRow
+	  	      android:id="@+id/liked_group_2"
+	  	      android:layout_width="fill_parent"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/like_group_1"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:layout_marginTop="45dp"
+	  	      android:orientation="vertical" >
+	  	      
+	  	      <ImageView
+	  	          android:id="@+id/liked_9"
+	  	          android:layout_width="45dp"
+	  	          android:layout_height="45dp"
+	  	          android:layout_marginLeft="260dp"
+	  	          android:background="@drawable/picto_like"
+	  	          android:padding="30dp"
+	  	          android:text="PRODUCT 1 NAME"
+	  	          android:textColor="#FFF" />
+
+	  	      <ImageView
+	  	          android:id="@+id/liked_10"
+	  	          android:layout_width="45dp"
+	  	          android:layout_height="45dp"
+	  	          android:layout_marginLeft="175dp"
+	  	          android:background="@drawable/picto_like"
+	  	          android:padding="30dp"
+	  	          android:text="PRODUCT 2 NAME"
+	  	          android:textColor="#FFF" />
+	  	      
+	  	   </TableRow>
+	  	   
+	  	  <TableRow
+	  	      android:id="@+id/contenu_2"
+	  	      android:layout_width="wrap_content"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/conteur_2"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:layout_marginBottom="10dp"
+	  	      android:gravity="center"
+	  	      android:orientation="vertical" >
+	  	      
+	  	      <ImageView
+	  	          android:id="@+id/product_9"
+	  	          android:layout_width="200dp"
+	  	          android:layout_height="300dp"
+	  	          android:layout_marginLeft="30dp"
+	  	          android:background="@drawable/product_border"
+	  	          android:paddingBottom="15dp"
+	  	          android:paddingLeft="10dp"
+	  	          android:paddingRight="10dp"
+	  	          android:src="@drawable/article" />
+
+	  	      <ImageView
+	  	          android:id="@+id/product_10"
+	  	          android:layout_width="200dp"
+	  	          android:layout_height="300dp"
+	  	          android:layout_marginLeft="30dp"
+	  	          android:background="@drawable/product_border"
+	  	          android:paddingBottom="15dp"
+	  	          android:paddingLeft="10dp"
+	  	          android:paddingRight="10dp"
+	  	          android:src="@drawable/article" />
+	  	      
+	  	   </TableRow>
+
+	  	   <TableRow
+	  	       android:id="@+id/description_2"
+	  	       android:layout_width="wrap_content"
+	  	       android:layout_height="wrap_content"
+	  	       android:layout_below="@id/conteur_2"
+	  	       android:layout_centerHorizontal="true"
+	  	       android:layout_marginTop="210dp"
+	  	       android:orientation="vertical" >
+	  	      
+	  	      <TextView
+	  	          android:id="@+id/nom_9"
+	  	          android:layout_width="150dp"
+	  	          android:layout_height="80dp"
+	  	          android:layout_gravity="center"
+	  	          android:layout_marginLeft="20dp"
+	  	          android:layout_marginRight="60dp"
+	  	          android:background="@drawable/product_name_bg"
+	  	          android:paddingLeft="15dp"
+	  	          android:paddingTop="15dp"
+	  	          android:text="PRODUCT 1 NAME"
+	  	          android:textColor="#FFF"
+	  	          android:textStyle="bold" />
+
+	  	      <TextView
+	  	          android:id="@+id/nom_10"
+	  	          android:layout_width="150dp"
+	  	          android:layout_height="80dp"
+	  	          android:layout_gravity="center"
+	  	          android:layout_marginLeft="20dp"
+	  	          android:background="@drawable/product_name_bg"
+	  	          android:paddingLeft="15dp"
+	  	          android:paddingTop="15dp"
+	  	          android:text="PRODUCT 2 NAME"
+	  	          android:textColor="#FFF"
+	  	          android:textStyle="bold" />
+	  	      
+	  	   </TableRow>
+
+	  	   <TableRow
+	  	      android:id="@+id/like_group_2"
+	  	      android:layout_width="fill_parent"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/description_2"
+	  	      android:layout_centerHorizontal="true"
+	  	      android:layout_marginTop="0dp"
+	  	      android:orientation="vertical" >
+	  	      
+	  	      <ImageView
+	  	          android:id="@+id/like_9"
+	  	          android:layout_width="40dp"
+	  	          android:layout_height="15dp"
+	  	          android:layout_marginLeft="275dp"
+	  	          android:background="@drawable/like_it"
+	  	          android:padding="30dp"
+	  	          android:text="PRODUCT 1 NAME"
+	  	          android:textColor="#FFF" />
+
+	  	      <ImageView
+	  	          android:id="@+id/like_10"
+	  	          android:layout_width="40dp"
+	  	          android:layout_height="15dp"
+	  	          android:layout_marginLeft="200dp"
+	  	          android:background="@drawable/like_it"
+	  	          android:padding="30dp"
+	  	          android:text="PRODUCT 2 NAME"
+	  	          android:textColor="#FFF" />
+	  	      
+	  	   </TableRow>
+	  	   
+	  	  	  	  <RelativeLayout
+	  	      android:id="@+id/contenu_88"
+	  	      android:layout_width="fill_parent"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_below="@id/contenu_2"
+	  	      android:layout_marginTop="40dp"
+	  	      android:orientation="vertical" >
+
+	  	      <ImageView
+	  	          android:id="@+id/deconnect_2"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:layout_alignParentRight="true"
+	  	          android:layout_centerVertical="true"
+	  	          android:layout_marginRight="30dp"
+	  	          android:background="@drawable/deco" />
+
+	  	      <ImageView
+	  	          android:id="@+id/valider"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:layout_centerVertical="true"
+	  	          android:layout_marginRight="96dp"
+	  	          android:layout_toLeftOf="@+id/deconnect_2"
+	  	          android:background="@drawable/valid_select" />
+
+	  	      <ImageView
+	  	          android:id="@+id/see_previous"
+	  	          android:layout_width="wrap_content"
+	  	          android:layout_height="wrap_content"
+	  	          android:layout_centerVertical="true"
+	  	          android:layout_marginRight="57dp"
+	  	          android:layout_toLeftOf="@+id/valider"
+	  	          android:background="@drawable/see_prev" />
+	  	      
+	  	   </RelativeLayout>
+	  	  <!--lativeLayout
+	  	      android:layout_width="250dp"
+	  	      android:layout_height="wrap_content"
+	  	      android:layout_alignLeft="@+id/home_text"
+	  	      android:layout_below="@+id/home_text"
+	  	      android:layout_marginTop="93dp"
+	  	      android:orientation="vertical" >
+
+	  	      <ImageView
+	  	          android:id="@+id/conteur_1"
+	  	          android:layout_width="200dp"
+	  	          android:layout_height="300dp"
+	  	          android:layout_alignParentLeft="true"
+	  	          android:layout_below="@+id/TextView01"
+	  	          android:layout_marginLeft="30dp"
+	  	          android:background="@drawable/product_border" />
+	  	      <ImageView
+	  	          android:id="@+id/ImageView02"
+	  	          android:layout_width="200dp"
+	  	          android:layout_height="300dp"
+	  	          android:layout_toLeftOf="@+id/conteur_1"
+	  	          android:layout_marginLeft="30dp"
+	  	          android:background="@drawable/product_border" />
+
+	  	      <TextView
+	  	          android:id="@+id/TextView01"
+	  	          android:layout_width="100dp"
+	  	          android:layout_height="100dp"
+	  	          android:layout_alignLeft="@+id/conteur_1"
+	  	          android:layout_alignParentTop="true"
+	  	          android:layout_marginLeft="40dp"
+	  	          android:background="@drawable/product_likes_bg"
+	  	          android:padding="36dp"
+	  	          android:text="356"
+	  	          android:textColor="#ffffff" />
+	  	  </RelativeLayout-->
+	  	  
+	  	  	  	  <ImageView
+	  	  	  	      android:id="@+id/footer"
+	  	  	  	      android:layout_width="fill_parent"
+	  	  	  	      android:layout_height="wrap_content"
+	  	  	  	      android:layout_alignParentBottom="true"
+	  	  	  	      android:layout_below="@+id/contenu_88"
+	  	  	  	      android:layout_marginTop="50dp"
+	  	  	  	      android:src="@drawable/footer_light" />
+
+	  	  	  	   <ImageView
+	  	  	  	      android:id="@+id/slide_right"
+	  	  	  	      android:layout_width="100dp"
+	  	  	  	      android:layout_height="150dp"
+	  	  	  	      android:layout_alignParentLeft="true"
+	  	  	  	      android:layout_alignTop="@+id/contenu_2"
+	  	  	  	      android:layout_marginTop="46dp"
+	  	  	  	      android:background="@drawable/slide_right" />
+
+</RelativeLayout>
